@@ -1,0 +1,33 @@
+{
+  "assignment": "ML-07",
+  "task": "Baseline Action Score and Top-20 Review",
+  "total_scored_items": 30000,
+  "base_rate_declining": 0.5421,
+  "precision_at_k": {
+    "p_at_20": 0.45,
+    "p_at_50": 0.4,
+    "p_at_100": 0.38,
+    "p_at_200": 0.475,
+    "p_at_500": 0.534,
+    "p_at_1000": 0.54
+  },
+  "hits_at_k": {
+    "hits_at_20": 9,
+    "hits_at_50": 20,
+    "hits_at_100": 38,
+    "hits_at_200": 95,
+    "hits_at_500": 267,
+    "hits_at_1000": 540
+  },
+  "feature_inputs": [
+    "impressions_prev_30d",
+    "days_since_last_update",
+    "avg_position",
+    "ctr"
+  ],
+  "leakage_audit": {
+    "product_flags_used": [],
+    "future_window_cols_used": [],
+    "passed": true
+  }
+}
